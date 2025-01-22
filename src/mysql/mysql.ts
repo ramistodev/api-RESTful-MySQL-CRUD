@@ -5,9 +5,9 @@ import { encryptPwd, verifyPassword } from '../utils'
 export async function connect (): Promise<Pool> {
   const connection = createPool({
     host: 'localhost',
-    user: 'root',
-    password: 'yuki24',
-    database: 'ts-prueba',
+    user: 'username',
+    password: 'password',
+    database: 'mysql-table',
     connectionLimit: 10,
     waitForConnections: true,
     queueLimit: 0
